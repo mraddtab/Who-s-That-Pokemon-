@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href= "/home.css" rel="stylesheet" type="text/css" />
+    <title>Pokemon</title>
+</head>
+<body>
+    <nav id = "navbar" class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          <img id = "logo" src="\imgs\pokeball.png" alt="">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Settings</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class ="pokeDiv" id = "pokeDiv">
+
+          <div class = "left" id = "left">
+            <p class = "tracker"> Current Streak: </p>
+            <p class = "tracker"> Best Streak: </p>
+            <p class = "tracker"> Pokemon Guessed: </p>
+          </div>
+
+          <div class = "center" id = "center">
+
+              
+              <div id = "centerInput">
+                <img src= <%= pokemonImg %>   class = "pokePic" id = "pokePic" alt="">
+                <div id = "centerText">
+                  <input type="text" name="pokeGuess" id="pokeGuess">
+                  <img src="/imgs/arrow-right.png" id = "rightArrow" alt="">
+                </div>
+                
+                <div id = centerButtons>
+                  <p id = "reveal"> Reveal</p>
+                  <p id = "nextPoke">Next Pokemon</p>                  
+                </div>
+              </div>
+
+          </div>
+
+          <div class="right" id = "right">
+                <div id = "volumeButtons">
+                  <img id = "soundButton" src="\imgs\volume.png" alt="">
+                  <img id = "musicButton" src="\imgs\music.png" alt="">
+                </div>
+          </div>
+
+      </div>
+
+        <!--Bootstrap JS-->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7Rs
+</body>
+</html>

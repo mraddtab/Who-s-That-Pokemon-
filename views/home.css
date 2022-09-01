@@ -1,0 +1,173 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    background-color: black;
+    height: 100vh;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* * Home Page * ** * Home Page * ** * Home Page * ** * Home Page * ** * Home Page * ** * Home Page * */
+/* * Home Page * ** * Home Page * ** * Home Page * ** * Home Page * ** * Home Page * ** * Home Page * */
+#title{
+    color: red;
+}
+#navbar{
+    background-color: #295288;
+}
+.nav-link{
+    color: #FFDE00;
+}
+#logo{
+    width: 75x;
+    height: 45px;
+}
+#layer0{
+    background-color: green;
+}
+#pokeDiv{
+	background-image: url('/imgs/grassBackground.png');
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 25%;
+    width: 33%;
+    padding: 5% 5% 10% 5%;
+}
+.tracker{
+    font-weight: 700;
+    font-size: larger;
+    margin-top: 3%;
+}
+#center{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-self: center;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+    width: 33%;
+    overflow: hidden;
+}
+#centerInput{
+    width: 60%;
+}
+.pokePic{
+    width: 400px;
+    height: 400px;
+    margin-right: 200px;
+
+}
+.pokePicHidden{
+    -webkit-filter: contrast(0) sepia(100%) hue-rotate(190deg) saturate(2000%) brightness(0%);
+    filter: contrast(0) sepia(100%) hue-rotate(190deg) saturate(2000%) brightness(0%);
+    opacity: 1;
+}
+#centerText{
+    display: flex;
+    flex-direction: row;
+    padding: 5% 10% 5% 10%;
+    margin-top: 5%;
+    width: 100%
+}
+#pokeGuess{
+    background-color: transparent;
+    border: 1px solid #000000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 7px;
+    width: 200%;
+}
+#centerButtons{
+    display: flex;
+    justify-content: space-around;
+    padding: 3% 10% 5% 10%;
+}
+#rightArrow{
+    margin-left: 20px;
+    width: 30px;
+    height: 30px;
+}
+#reveal{
+    color: #FFDE00;
+}
+#nextPoke{
+    color: #295288;
+}
+
+#right{
+    display: flex;
+    height: 25%;
+    width: 33%;
+    padding: 5% 5% 10% 5%;
+}
+#volumeButtons{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background-color: red;
+    top: -25px;
+    left: 250px;
+    width: 100%;
+    height: 100%;
+
+}
+#soundButton{
+    width: 44px;
+    height: 38px;
+    margin: 0 0px 0 25px;
+}
+#musicButton{
+    width: 44px;
+    height: 38px;
+    margin: 0 15px 0 0;
+}
